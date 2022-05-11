@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Lottery</title>
+</head>
+<body>
+    <h1>Lottery in thailand</h1>
+    <h2>ฉลากกินแบ่งรัฐบาลไทย</h2>
+    <hr>
+    <table class="nav"> 
+        <tr> 
+            <td>
+                <h3><a href="/">Home</a></h3>
+            </td>
+            <td> 
+                <h3><a href="/add.ejs">ADD</a></h3>
+            </td>
+            <td>
+                <h3><a href="/profile.ejs">Profile</a></h3>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>ตรวจสอบรางวัลฉลากกินแบ่ง</h2>
+    <table class="Check">
+        <tr>
+            <th>
+                <h3>วันที่ 16 มีนาคม 2565</h3>
+                <form action="" method="port"><input name="check1" class="Box" type="text" placeholder="Check Reward" required>
+                    <button type="submit" class="bt">Submit</button>
+                </form>
+            </th>
+            <th>
+                <h3>วันที่ 1 เมษายน 2565</h3>
+                <form action="" method="port"><input name="check2" class="Box" type="text" placeholder="Check Reward" required>
+                    <button type="submit" class="bt">Submit</button>
+                </form>
+            </th>
+            <th>
+                <h3>วันที่ 16 เมษายน 2565</h3>
+                <form action="" method="port"><input name="check3" class="Box" type="text" placeholder="Check Reward" required>
+                    <button type="submit" class="bt">Submit</button>
+                </form>
+            </th>
+        </tr>
+    </table>
+    <hr>
+    <h2>ตารางหมายเลขฉลากกินแบ่ง</h2>
+    <table class="Check-table">
+        <tr>
+            <th>
+                <tr>
+                    <td><p>รางวัลที่ 1</p></td>
+                    <td><p>รางวัลที่ 2</p></td>
+                    <td><p>รางวัลเลขสุดท้าย</p></td>
+                </tr>
+                <% march16.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.Reward1 %></td>
+                    <td><%= item.Reward2 %></td>
+                    <td><%= item.Rewardlastnumber %></td>
+                </tr>
+                <% }) %>
+            </th>
+            <th>
+                <tr>
+                    <td><p>รางวัลที่ 1</p></td>
+                    <td><p>รางวัลที่ 2</p></td>
+                    <td><p>รางวัลเลขสุดท้าย</p></td>
+                </tr>
+                <% march16.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.Reward1 %></td>
+                    <td><%= item.Reward2 %></td>
+                    <td><%= item.Rewardlastnumber %></td>
+                </tr>
+                <% }) %>
+            </th>
+            <th>
+                <tr>
+                    <td><p>รางวัลที่ 1</p></td>
+                    <td><p>รางวัลที่ 2</p></td>
+                    <td><p>รางวัลเลขสุดท้าย</p></td>
+                </tr>
+                <% march16.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.Reward1 %></td>
+                    <td><%= item.Reward2 %></td>
+                    <td><%= item.Rewardlastnumber %></td>
+                </tr>
+                <% }) %>
+            </th>
+        </tr>
+    </table>
+    <hr>
+    <div class="imge">
+        <footer><img src="bu.png" alt="Profile" style="width: 10%;"></footer>
+    </div>
+    <hr>
+</body>
+</html>
