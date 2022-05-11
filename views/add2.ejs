@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/add.css">
+    <title>Lottery</title>
+</head>
+<body>
+    <table class="nav"> 
+        <tr> 
+            <td>
+                <h3><a href="/">Home</a></h3>
+            </td>
+            <td> 
+                <h3><a href="/addall.ejs">ADD</a></h3>
+            </td>
+            <td>
+                <h3><a href="/profile.ejs">Profile</a></h3>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>เพิ่มหมายเลขฉลากกินแบ่ง</h2>
+    <table class="Input">
+        <table class="Input">
+            <tr>
+                <th>
+                    <% if(typeof mesg != "undefined") { %>
+                        <h1><%= mesg %></h1>
+                        <% } %>
+                        <form action="/add2.ejs" method="post">
+                            <div>
+                                <label>Reward1</label>
+                                <input type="text" name="Reward1" id="Reward1"> 
+                            </div>
+                            <div>
+                                <label>Reward2</label>
+                                <input type="text" name="Reward2" id="Reward2"> 
+                            </div>
+                            <div>
+                                <label>Rewardlastnumber</label>
+                                <input type="text" name="Rewardlastnumber" id="Rewardlastnumber"> 
+                            </div>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                </th>
+            </tr>
+        </table>
+    </table>
+</body>
+</html>
